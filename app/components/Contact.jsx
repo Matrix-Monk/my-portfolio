@@ -1,8 +1,39 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+
+
+  // copy the code from "https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/simple-react-contact-form"
+
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "70abae9a-46de-43dd-9b61-e4f8f8c06e79");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+    
+   //******
+
   return (
     <div
       id="contact"
@@ -15,19 +46,21 @@ const Contact = () => {
         culpa libero vel deserunt magni? Cumque ratione optio molestiae sunt!
       </p>
 
-      <form className="max-w-2xl mx-auto" action="">
+      <form onSubmit={onSubmit} className="max-w-2xl mx-auto" action="">
         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+                      className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+                      name="name"
           />
           <input
             type="email"
             placeholder="Enter your email"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+                      className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+                      name="email"
           />
         </div>
 
@@ -35,11 +68,18 @@ const Contact = () => {
           rows="6"
           placeholder="Type your message"
           required
-          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+                  className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+                  name="message"
         ></textarea>
 
-              <button className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500" type="submit">Send an Email <Image src={assets.right_arrow_white} alt="" className="w-4" /></button>
-              <p className="mt-4" >sending...</p>
+        <button
+          className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+          type="submit"
+        >
+          Send an Email{" "}
+          <Image src={assets.right_arrow_white} alt="" className="w-4" />
+        </button>
+              <p className="mt-4">{ result}</p>
       </form>
     </div>
   );
