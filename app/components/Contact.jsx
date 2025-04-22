@@ -65,8 +65,9 @@ const Contact = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam
-        culpa libero vel deserunt magni? Cumque ratione optio molestiae sunt!
+        “Got a project in mind? Let’s chat and bring your ideas to life! I’d
+        love to collaborate and make something amazing together—just drop me a
+        message!”
       </motion.p>
 
       <motion.form
@@ -101,9 +102,9 @@ const Contact = () => {
         </div>
 
         <motion.textarea
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.3 }}
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.3 }}
           rows="6"
           placeholder="Type your message"
           required
@@ -113,7 +114,7 @@ const Contact = () => {
 
         <motion.button
           whileHover={{ scale: 1.05 }}
-          transition={{duration: 0.3}}
+          transition={{ duration: 0.3 }}
           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:border-r-darkHover"
           type="submit"
         >

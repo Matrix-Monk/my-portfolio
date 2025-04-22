@@ -37,9 +37,10 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-        excepturi vero voluptatem tempore et magnam dolores fugit nisi deleniti
-        porro mollitia est officia minus expedita?
+        I have expertise in both front-end and
+        back-end technologies. I also strongly focus on SEO optimization to
+        ensure web applications rank well in search engines. I specialize in
+        building responsive, scalable, and user-friendly web applications.
       </motion.p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">

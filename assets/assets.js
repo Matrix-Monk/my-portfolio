@@ -35,6 +35,14 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import react from './react.png';
+import NodeJS from "./NodeJs.png";
+import tailwind from './tailwind.png';
+import nextJs from './nextJs.png';
+import PostgresSQL from './PostgresSQL.png';
+import github from './github.png';
+import Javascript from './Javascript.png';
+import Typescript from './Typescript.png';
 
 export const assets = {
     user_image,
@@ -73,28 +81,36 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    react,
+    NodeJS,
+    tailwind,
+    nextJs,
+    PostgresSQL,
+    github, 
+    Javascript, 
+    Typescript
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'TalkTiMe',
+        description: 'A Reak time chat application',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Horizon',
+        description: 'All banking need at one place',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Shopify',
+        description: 'E-commerce website',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'My-portFolio',
+        description: 'My personal portfolio',
         bgImage: '/work-4.png',
     },
 ]
@@ -108,11 +124,33 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { index:1, icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { index:2, icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { index:3, icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
+    
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+  assets.vscode,
+  assets.mongodb,
+  assets.figma,
+  assets.git,
+  assets.react,
+  assets.NodeJS,
+  assets.tailwind,
+  assets.nextJs,
+  assets.PostgresSQL,
+//   assets.github,
+//   assets.Javascript,
+//   assets.Typescript,
 ];
+
+
+// export const toolsData = [
+//   assets.vscode,
+//   assets.firebase,
+//   assets.mongodb,
+//   assets.figma,
+//   assets.git,
+// 
+// ];

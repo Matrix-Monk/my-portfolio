@@ -6,9 +6,17 @@ const Footer = ({isDarkMode}) => {
   return (
     <div className="mt-20">
       <div className="text-center ">
-        <Image src={ isDarkMode? assets.logo_dark : assets.logo} alt="" className="w-36 mx-auto mb-2" />
+        <Image
+          src={isDarkMode ? assets.logo_dark : assets.logo}
+          alt=""
+          className="w-36 mx-auto mb-2"
+        />
         <div className="w-max flex items-center gap-2 mx-auto">
-          <Image src={ isDarkMode? assets.mail_icon_dark : assets.mail_icon} alt="" className="w-6" />
+          <Image
+            src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon}
+            alt=""
+            className="w-6"
+          />
           gk.gopalkumar22@gmail.com
         </div>
       </div>
@@ -22,7 +30,10 @@ const Footer = ({isDarkMode}) => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/Matrix-Monk">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/gopalkumar3435"
+            >
               LinkedIn
             </a>
           </li>
