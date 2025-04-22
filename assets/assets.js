@@ -36,13 +36,13 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import react from './react.png';
-import NodeJS from "./NodeJs.png";
+import nodeJS from "./nodeJs.png";
 import tailwind from './tailwind.png';
 import nextJs from './nextJs.png';
-import PostgresSQL from './PostgresSQL.png';
+import postgresSQL from './postgresSQL.png';
 import github from './github.png';
-import Javascript from './Javascript.png';
-import Typescript from './Typescript.png';
+import javascript from './javascript.png';
+import typescript from './typescript.png';
 
 export const assets = {
     user_image,
@@ -83,13 +83,13 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     react,
-    NodeJS,
+    nodeJS,
     tailwind,
     nextJs,
-    PostgresSQL,
+    postgresSQL,
     github, 
-    Javascript, 
-    Typescript
+    javascript, 
+    typescript
 };
 
 export const workData = [
@@ -133,24 +133,14 @@ export const infoList = [
 export const toolsData = [
   assets.vscode,
   assets.mongodb,
-  assets.figma,
   assets.git,
   assets.react,
-  assets.NodeJS,
+  assets.nodeJS,
   assets.tailwind,
   assets.nextJs,
-  assets.PostgresSQL,
-//   assets.github,
-//   assets.Javascript,
-//   assets.Typescript,
+  assets.postgresSQL,
+  assets.github,
+  assets.javascript,
+  assets.typescript,
 ];
 
-
-// export const toolsData = [
-//   assets.vscode,
-//   assets.firebase,
-//   assets.mongodb,
-//   assets.figma,
-//   assets.git,
-// 
-// ];
