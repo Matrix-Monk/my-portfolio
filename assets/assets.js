@@ -38,7 +38,7 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import react from './react.png';
 import nodejs from './nodejs.png';
 import tailwind from './tailwind.png';
-import nextJs from './nextJs.png';
+import nextJs from './nextjs.png';
 import postgresSQL from './postgresSQL.png';
 import github from './github.png';
 import javascript from './javascript.png';
